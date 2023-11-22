@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Search Engine - Advanced Search</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <a href="#"><img src="logo.png" alt="Search Engine Logo"></a>
+      <div class="links">
+        <a href="index.html">Google Search</a>
+        <a href="image_search.html">Image Search</a>
+      </div>
+    </header>
+
+    <main>
+      <form action="#" method="GET">
+        <label for="all_words">Find pages with all of these words:</label>
+        <input type="text" id="all_words" name="all_words">
+
+        <label for="exact_phrase">Find pages with this exact word or phrase:</label>
+        <input type="text" id="exact_phrase" name="exact_phrase">
+
+        <label for="any_words">Find pages with any of these words:</label>
+        <input type="text" id="any_words" name="any_words">
+
+        <label for="none_words">Find pages without any of these words:</label>
+        <input type="text" id="none_words" name="none_words">
+
+        <button type="submit">Advanced Search</button>
+      </form>
+    </main>
+  </div>
+</body>
+</html>

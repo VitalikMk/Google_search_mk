@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Search Engine</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <a href="#"><img src="logo.png" alt="Search Engine Logo"></a>
+      <div class="links">
+        <a href="image_search.html">Image Search</a>
+        <a href="advanced_search.html">Advanced Search</a>
+      </div>
+    </header>
+
+    <main>
+      <form action="#" method="GET">
+        <input type="text" placeholder="Search the web" name="q">
+        <button type="submit">Google Search</button>
+        <button type="button" id="lucky">I'm Feeling Lucky</button>
+      </form>
+    </main>
+  </div>
+
+  <script>
+    document.getElementById('lucky').addEventListener('click', function() {
+      // Redirect to the first search result
+      window.location.href = 'https://www.google.com/search?q=' + document.querySelector('input[name="q"]').value;
+    });
+  </script>
+</body>
+</html>
